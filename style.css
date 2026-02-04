@@ -1,9 +1,15 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+
+.encode-sans{
+  font-family: "Encode Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
-body{
-    background-color: linear-gradient(180deg, rgba(217, 240, 255, 1) 0%, rgba(109, 178, 209, 1) 59%, rgba(54, 148, 185, 1) 80%, rgba(0, 117, 162, 1) 100%);
+:root{
+    --font-pattern: 'Encode Sans', sans-serif; 
 }

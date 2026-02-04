@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima Hoje</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+</head>
+<body class="min-h-screen bg-[linear-gradient(180deg,_rgba(217,240,255,1)_0%,_rgba(109,178,209,1)_59%,_rgba(54,148,185,1)_80%,_rgba(0,117,162,1)_100%)] font-[family-name:var(--font-pattern)]">
+    <header class="flex justify-center pt-5 pb-5">
+        <div class="flex items-center justify-between w-[85%] h-[2rem] border-[1px] border-solid border-white rounded-[50px] shadow-sm shadow-[#F4FBFF] p-3 mt-3  text-[#0075A2] bg-[#D9F0FF]">   
+            <input placeholder="Digite sua cidade" class= "w-[100%] focus:outline-none"> 
+            <img src="/icones/Lupa.png">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="flex justify-center text-[2em] text-[#0075A2]"> 
+                <h2>Jaraguá Do Sul</h2>
+            </div>
+            <div class="flex-col justify-items-center mt-8 text-[#0D1856] space-y-4">
+                <img src="/icones/sun.png">
+                <p>Ensolarado</p>
+            </div>
+        </section>
+        <section class="m-auto max-w-[85%] bg-white/20 flex-col justify-center justify-items-center rounded-3xl border-solid border-white border-[1px] shadow-sm shadow-[#F4FBFF] mt-8">
+            <div>
+                <h4 class="text-[#0D1856] text-center">Hoje</h4>
+                <h2 class="text-[#0075A2] text-[3.5em]">23°C</h2>
+            </div>
+            <div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
