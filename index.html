@@ -7,36 +7,79 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-</head>
 <body class="min-h-screen bg-[linear-gradient(180deg,_rgba(217,240,255,1)_0%,_rgba(109,178,209,1)_59%,_rgba(54,148,185,1)_80%,_rgba(0,117,162,1)_100%)] font-[family-name:var(--font-pattern)]">
     <header class="flex justify-center pt-5 pb-5">
         <div class="flex items-center justify-between w-[85%] h-[2rem] border-[1px] border-solid border-white rounded-[50px] shadow-sm shadow-[#F4FBFF] p-3 mt-3  text-[#0075A2] bg-[#D9F0FF]">   
-            <input placeholder="Digite sua cidade" class= "w-[100%] focus:outline-none"> 
-            <img src="/icones/Lupa.png">
+            <input id="input-city" placeholder="Digite sua cidade" class= "w-[100%] focus:outline-none"> 
+            <button id="search" type="submit"><img src="/icones/Lupa.png" alt="Botão de Busca"></button>
         </div>
     </header>
     <main>
         <section>
             <div class="flex justify-center text-[2em] text-[#0075A2]"> 
-                <h2>Jaraguá Do Sul</h2>
+                <h2 id="city"></h2>
             </div>
             <div class="flex-col justify-items-center mt-8 text-[#0D1856] space-y-4">
-                <img src="/icones/sun.png">
-                <p>Ensolarado</p>
+                <p id="weather"></p>
             </div>
         </section>
         <section class="m-auto max-w-[85%] bg-white/20 flex-col justify-center justify-items-center rounded-3xl border-solid border-white border-[1px] shadow-sm shadow-[#F4FBFF] mt-8">
             <div>
                 <h4 class="text-[#0D1856] text-center">Hoje</h4>
-                <h2 class="text-[#0075A2] text-[3.5em]">23°C</h2>
+                <h2 id="weather-today" class="text-[#0075A2] text-[3.5em]"></h2>
             </div>
-            <div>
-                
+            <div class="flex justify-between w-[85%] ">
+                <div class="flex w-[100%] items-center justify-between text-[#0D1856] pb-[0.5em] pt-[0.5em] border-b-[1px] border-b-[#0075A2]">
+                    <div>
+                        <p>Segunda-Feira</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[#0D1856]">
+                        <p id="weather-monday"></p>
+                    </div>
+                </div>
+            </div>
+             <div class="flex justify-between w-[85%] ">
+                <div class="flex w-[100%] items-center justify-between text-[#0D1856] pb-[0.5em] pt-[0.5em] border-b-[1px] border-b-[#0075A2]">
+                    <div>
+                        <p>Terça-Feira</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[#0D1856]">
+                        <p id="weather-tuesday"></p>
+                    </div>
+                </div>
+            </div>
+             <div class="flex justify-between w-[85%] ">
+                <div class="flex w-[100%] items-center justify-between text-[#0D1856] pb-[0.5em] pt-[0.5em] border-b-[1px] border-b-[#0075A2]">
+                    <div>
+                        <p>Quarta-Feira</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[#0D1856]">
+                        <p id="weather-wednesday"></p>
+                    </div>
+                </div>
+            </div>
+             <div class="flex justify-between w-[85%] ">
+                <div class="flex w-[100%] items-center justify-between text-[#0D1856] pb-[0.5em] pt-[0.5em] border-b-[1px] border-b-[#0075A2]">
+                    <div>
+                        <p>Quinta-Feira</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[#0D1856]">
+                        <p id="weather-thursday"></p>
+                    </div>
+                </div>
+            </div>
+             <div class="flex justify-between w-[85%] ">
+                <div class="flex w-[100%] items-center justify-between text-[#0D1856] pb-[0.5em] pt-[0.5em]">
+                    <div>
+                        <p>Sexta-Feira</p>
+                    </div>
+                    <div class="flex items-center justify-between text-[#0D1856]">
+                        <p id="weather-friday"></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
