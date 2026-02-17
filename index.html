@@ -9,10 +9,10 @@
 </head>
 <body class="min-h-screen bg-[linear-gradient(180deg,_rgba(217,240,255,1)_0%,_rgba(109,178,209,1)_59%,_rgba(54,148,185,1)_80%,_rgba(0,117,162,1)_100%)] font-[family-name:var(--font-pattern)]">
     <header class="flex justify-center pt-5 pb-5">
-        <div class="flex items-center justify-between w-[85%] h-[2rem] border-[1px] border-solid border-white rounded-[50px] shadow-sm shadow-[#F4FBFF] p-3 mt-3  text-[#0075A2] bg-[#D9F0FF]">   
+        <form class="flex items-center justify-between w-[85%] h-[2rem] border-[1px] border-solid border-white rounded-[50px] shadow-sm shadow-[#F4FBFF] p-3 mt-3  text-[#0075A2] bg-[#D9F0FF]">   
             <input id="input-city" placeholder="Digite sua cidade" class= "w-[100%] focus:outline-none"> 
             <button id="search" type="submit"><img src="/icones/Lupa.png" alt="Botão de Busca"></button>
-        </div>
+        </form>
     </header>
     <main>
         <section>
@@ -23,8 +23,7 @@
                 <p id="weather"></p>
             </div>
         </section>
-        <section class="m-auto max-w-[85%] bg-white/20 flex-col justify-center justify-items-center rounded-3xl border-solid border-white border-[1px] shadow-sm shadow-[#F4FBFF] mt-8">
-            <div>
+        <section id="forecast-section" class="m-auto max-w-[85%] bg-white/20 flex-col justify-center justify-items-center rounded-3xl border-solid border-white border-[1px] shadow-sm shadow-[#F4FBFF] mt-8 hidden">            <div>
                 <h4 class="text-[#0D1856] text-center">Hoje</h4>
                 <h2 id="weather-today" class="text-[#0075A2] text-[3.5em]"></h2>
             </div>
